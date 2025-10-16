@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- navbar -->
@@ -117,39 +119,65 @@
         </div>
     </div>
     </div>
-        <div class="container-galeri">
-        <h1 class="title">Portofolio</h1>
+    <div class="containerportofolio">
+        <div class="vidionyo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eNsAfNTGqtU?si=DbShMoZeV8AknAZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="teksnyo">
+                <h1 class="pew">Portofolio Dkv</h1>
+                Pada portofolio siswa - siswi DKV kami mengemas dalam berbagai bentuk diantaranya :
+            </div>        
+    </div>
 
-        <div class="filterbutton">
+
+
+
+        <div class="container-galeri">
+            <h1 class="title">Portofolio</h1>
+
+             <div class="filterbutton">
             <button class="filterbtn active" data-filter="All">All</button>
             <button class="filterbtn" data-filter="Desain-grafis" >Desain Grafis</button>
             <button class="filterbtn" data-filter="desain-3d" >Design 3D</button>
             <button class="filterbtn" data-filter="fotografi" >Photography</button>
-        </div>
-        <div class="gallery">
-            <div class="gambar fotografi">
-                <img src="https://awsimages.detik.net.id/community/media/visual/2022/03/07/konten-dede-inoen-1_169.jpeg?w=1200" alt="">
             </div>
-            <div class="gambar fotografi">
-                <img src="https://image.kemenpora.go.id/images/content/2022/11/16/2834/3004Pada-Acara-G20-Presiden-Jokowi-Nyatakan-Indonesia-Siap-jadi-Tuan-Rumah-Olimpiade-2036-yang-Bertempat-di-IKN.jpeg" alt="">
-            </div>
-            <div class="gambar desain-3d">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_IEq7-8_sUUkconqbvk0Y85FfYHx3i7Ij5A&s" alt="">
-            </div>
-            <div class="gambar Desain-grafis">
-                <img src="https://i.pinimg.com/originals/69/bc/f4/69bcf4a1f0e6de873a1e9c8c0d41eabd.gif" alt="">
-            </div>
-            <div class="gambar fotografi">
-                <img src="https://rubenbaamez.com/wp-content/uploads/2024/10/Ayam-Geprek.jpg" alt="">
-            </div>
-            <div class="gambar Desain-grafis">
-                <img src="https://i.pinimg.com/736x/48/d1/0a/48d10ab0b24d46055b8a7c8cc6b6c98a.jpg" alt="">
-            </div>
+            <div data-aos="flip-up"
+            data-aos-duration="3000">
+            <div class="gallery">
+            
+                <div class="gambar fotografi">
+                <img src="https://smkpesat.sch.id/wp-content/uploads/2025/07/FotoArtboard-1-copy-13.png" alt="">
+                </div>
+                <div class="gambar fotografi">
+                <img src="https://smkpesat.sch.id/wp-content/uploads/2025/07/Porto-DKV-Artboard-1-copy.png" alt="">
+                
+                </div>
+                <div class="gambar desain-3d">
+                <img src="https://smkpesat.sch.id/wp-content/uploads/2025/07/Porto-DKV-Artboard-1-copy-9.png" alt="">
+                </div>
+                <div class="gambar Desain-grafis">
+                <img src="https://smkpesat.sch.id/wp-content/uploads/2025/07/Porto-DKV-Artboard-1-copy-4.png" alt="">
+                </div>
+                <div class="gambar fotografi">
+                <img src="https://smkpesat.sch.id/wp-content/uploads/2025/07/Porto-DKV-Artboard-1.png" alt="">
+                </div>
+                <div class="gambar Desain-grafis">
+                <img src="https://smkpesat.sch.id/wp-content/uploads/2025/07/Porto-DKV-Artboard-1-copy-6.png" alt="">
+                </div>
         </div>
 
 
     </div>
+</div>
+
+
+
+    </div>
     <script src="index.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </body>
 </html>
+<!-- extention = ctrl shift x -->
