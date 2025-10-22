@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-color: lawngreen;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80%;
+            padding: 20px;
+            background-color: seagreen;
+            border-radius: 10px;
+            margin: auto;
+        }
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+        input[type=submit]{
+            background-color: rgb(0, 75, 0);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h3>Contact Form</h3>
+    <form action="">
+        <label for="Nama Lengkap">Nama Lengkap</label>
+        <input type="text" id="nama lengkap" name="nama lengkap"  placeholder="Masukkan Nama Lengkap Anda">
+
+        <label for="negara">Negara</label>
+        <select name="negara" id="negara">
+            <option value="indonesia">Indonesia</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="singapore">Singapore</option>
+            <option value="jepang">jepang</option>
+            <option value="korea selatan">Korea Selatan</option>
+            <option value="jerman">jerman</option>
+            <option value="italia">Italia</option>
+            <option value="spanyol">Spanyol</option>
+            <option value="amerika serikat">Amerika Serikat</option>
+            <option value="kanada">Kanada</option>
+            <option value="fahmi">fahmi</option>
+            
+        </select>
+        <label for="Subjek">Subjek</label>
+        <textarea name="Subjek" id="subjek" placeholder="subjek" style="height: 200px;"></textarea>
+
+        <input type="radio" id="kota" value="kota" name="tes">
+        <label for="kota">Jakarta</label><br>
+        <input type="radio" id="kota" value="kota" name="tes">
+        <label for="kota">Jakarta</label><br>
+
+        <input type="checkbox" name="smp" value="smp">
+        <label for="smp">smp</label><br>
+        <input type="checkbox" name="smp" value="smp">
+        <label for="sma">sma</label><br>
+        <input type="checkbox" name="smp" value="smp">
+        <label for="smk">smk</label><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+    </div>
+</body>
+</html>

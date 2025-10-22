@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 60%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      margin-top: 275px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* background: #444; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 105px;
+      overflow: hidden;
+      filter: brightness(30%);
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .text{
+      position: absolute;
+      bottom: 8px;
+      font-size: x-large;
+      color: white;
+      z-index: 9999;
+    }
+    .swiper-slide:hover {
+      filter: brightness(100%);
+      transition: 0.3s;
+      transform: rotate(90);
+    }
+  </style>
+</head>
+
+<body>
+
+    
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://png.pngtree.com/thumb_back/fh260/background/20240731/pngtree-beautiful-natural-landscape-and-tropical-forest-phuket-island-thailand-image_15938182.jpg" alt=""><div class="text">Test</div></div>
+
+      <div class="swiper-slide"><img src="https://media.sukabumiupdate.com/media/2024/09/17/1726547921_66e907d146418_wE0IwySj9bM1kFSF945T.webp" alt=""></div>
+
+      <div class="swiper-slide"><img src="https://tr.rbxcdn.com/180DAY-8d26dcb333e237ef13ef6e2bf125799e/768/432/Image/Webp/noFilter" alt=""></div>
+
+      <div class="swiper-slide"><img src="https://www.gamereactor.asia/media/15/spongebobsquarepants_4621583b.png" alt=""></div>
+
+      <div class="swiper-slide"><img src="https://media.istockphoto.com/id/1185438518/photo/funny-large-longhair-gray-tabby-cute-kitten-with-beautiful-green-eyes-pets-and-lifestyle.jpg?s=1024x1024&w=is&k=20&c=UcGa8eUTFfSP3r7919FRw2fuzCES1o6tAP78q8AJUyE=" alt=""></div>
+
+      <div class="swiper-slide"><img src="https://cdn.antaranews.com/cache/1200x800/2011/04/20110409022242sule-sutisna.jpg" alt=""></div>
+
+      <div class="swiper-slide"><img src="https://awsimages.detik.net.id/community/media/visual/2025/07/10/poster-film-sore-istri-dari-masa-depan-1752119004474_43.webp?w=650" alt=""></div>
+
+      <div class="swiper-slide"><img src="https://assets.telkomsel.com/public/2025-06/skibidi-toilet.jpg?VersionId=1r1YlZGIcVHhD4r2BiRi0uYZQqb7Pi9a" alt=""></div>
+
+      <div class="swiper-slide"><img src="https://cdn-1.timesmedia.co.id/images/2024/03/19/Bruno-Mars.jpg" alt=""></div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+    
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

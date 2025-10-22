@@ -156,6 +156,18 @@ h5{
     color: #0c084c;
     font-weight: bold;
 }
+
+
+
+
+
+/* cek */
+
+
+
+
+
+
 .JURUSAN{
     display: flex;
     justify-content: center;
@@ -244,6 +256,18 @@ h5{
     font-weight: 500;
     color: #0c084c;
 }
+
+
+
+
+/* cek   */
+
+
+
+
+
+
+
 .container-galeri {
     max-width: 1100px;
     margin: auto;
@@ -294,6 +318,14 @@ h5{
 .gambar:hover {
     transform: scale(1.1);
 }
+
+
+
+/* cek */
+
+
+
+
 .containerportofolio{
     width: 80%;
     margin: auto;
@@ -333,3 +365,7 @@ h1 .pew{
     line-height: 30px;
     padding: 0px 20px 0px 20px;
 }
+
+
+/* cek */
+
