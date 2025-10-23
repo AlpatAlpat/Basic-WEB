@@ -11,7 +11,9 @@
     body {
       margin: 0;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      background: linear-gradient(180deg, #000000, #0000ff, #000000);
+      background-image: url(https://img.itch.zone/aW1nLzEzMjMzNTczLnBuZw==/original/LYLy4q.png);
+      background-size: unset;
+      background-position: center;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -20,19 +22,22 @@
     }
 
     .container {
-      background: white;
+      background-image: url(https://files.idyllic.app/files/static/2526018);
+      background-size: cover;
+      background-position: center;
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       width: 100%;
       max-width: 400px;
       position: relative;
+      filter: brightness(100%);
     }
 
     h2 {
       text-align: center;
       margin-bottom: 30px;
-      color: crimson;
+      color: #fff;
     }
 
     input[type="text"],
@@ -83,28 +88,29 @@
     /* Decorative abstract shapes */
     .shape {
       position: absolute;
-      border-radius: 50%;
+      /* border-radius: 50%; */
       opacity: 1;
     }
 
-    .shape.teal {
-      background: rgb(82, 0, 0);
-      width: 80px;
-      height: 80px;
-      top: -40px;
-      left: -40px;
+    .shape.wand {
+      background: transparent;
+      position: absolute;
+      top: -199px;
+      left: -130px;
+      rotate: -40deg;
     }
 
-    .shape.white {
-      background: rgb(129, 42, 42);
-      width: 60px;
-      height: 60px;
-      bottom: -30px;
-      right: -30px;
+    .shape.pedang {
+      background: transparent;
+      position: absolute;
+      bottom: -50px;
+      right: -313px;
+      filter: brightness(65%);
+      filter: contrast(150%);
     }
 
-    .shape.purple {
-      background: #c23b3b;
+    .shape.api {
+      background-linear-gradient: #000000, #00ff00;
       width: 100px;
       height: 100px;
       top: 50%;
@@ -115,9 +121,11 @@
 </head>
 <body>
   <div class="container">
-    <div class="shape teal"></div>
-    <div class="shape white"></div>
-    <div class="shape purple"></div>
+    <div class="shape wand"><img src="aset/mahkota.png" alt="" width="35%"></div>
+    <div class="shape pedang">
+      <img src="aset/pixelswordd.png" alt="" width="35%">
+    </div>
+    <div class="shape api"></div>
 
     <h2>REGISTER</h2>
     <form>
