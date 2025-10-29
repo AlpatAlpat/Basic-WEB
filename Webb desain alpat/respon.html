@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .kolum {
+            display: flex;
+            
+        }
+        @media screen and (max-width: 430px) {
+            .kolum {
+                flex-direction: column;
+            }
+        }
+        .dkv {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+        }
+        .rpl {
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 10px;
+            float: middle;
+        }
+        .tkj {
+            background-color: lightcoral;
+            padding: 10px;
+            margin: 10px;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Jurusan smk pesat</h1>
+
+    <div class="kolum">
+
+    <div class="dkv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, cumque.</div>
+
+    <div class="rpl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, suscipit.</div>
+
+    <div class="tkj">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, tempora.</div>
+
+    </div>
+
+</body>
+</html>

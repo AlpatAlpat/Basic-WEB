@@ -377,3 +377,49 @@ h1 .pew{
 
 /* cek */
 
+
+@media screen and (max-width: 430px) {
+  .navigasi {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    flex-direction: column;
+    display: flex;
+  }
+  .pendaftaran {
+    flex-direction: column;
+    text-align: center;
+  }
+  .perusahaan {
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+  }
+  .JURUSAN {
+    display: flex;
+    flex-direction: column;
+  }
+    .containerportofolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vidionyo {
+        
+    }
+    .container-galeri {
+        display: flex;
+        flex-direction: column;
+    }
+}
