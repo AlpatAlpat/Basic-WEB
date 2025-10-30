@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "Poppins";
+            background-color: gray;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .containerform{
+            background-color: aliceblue;
+            padding: 40px;
+            border-radius: 30px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 19);
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        label{
+            display: block;
+            font-weight: bold;
+        }
+        .fontgrup{
+            margin-bottom: 15px;
+        }
+        input{
+            width: 95%;
+            padding: 10px;
+            font-size: 14px;
+            outline: none;
+            border: 1.5px solid #ccc;
+            border-radius: 5px;
+            
+        }
+        input:focus{
+            border-color: #4caf50;
+            outline: none;
+            transition: 1.2s;
+        }
+        button{
+            width: 100%;
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color: #45a049;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="containerform">
+        <h2>FORM</h2>
+        <form id="myform" action="">
+            <div class="formgrup">
+                <label for="name">Nama</label>
+                <input type="text" id="name" placeholder="Masukan nama lengkap">
+                <div class="error" id="nameerror"></div>
+            </div>
+        
+            <div class="formgrup">
+                <label for="Email">Email</label>
+                <input type="Email" id="Email" placeholder="Masukan Email anda">
+                <div class="error" id="Emailerror"></div>
+            </div>
+
+            <div class="formgrup">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Masukan password">
+                <div class="error" id="passworderror"></div>
+            </div>
+            <button type="submit">daftar</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById("myform");
+        const name = document.getElementById("name");
+        const Email = document.getElementById("Email");
+        const password = document.getElementById("password");
+
+        const nameerror1 = document.getElementById("nameerror");
+        const Emailerror1 = document.getElementById("Emailerror");
+        const passworderror1 = document.getElementById("passworderror");
+
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+            
+            nameerror1.textCotent = "";
+            Emailerror1.textCotent = "";
+            passworderror1.textCotent = "";
+
+            if(name.value.trim() === ""){
+                nameerror1.textCotent = "Nama Tidak Boleh Kosong";
+            }
+
+
+
+            const emailpattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if(Email.value.trim() === ""){
+                Emailerror1.textCotent = "Nama Tidak Boleh Kosong";
+            }else if (!Email.value.match(emailpattern)) {
+                Emailerror1.textContent = "Format Email Salah";
+            }
+           
+           
+            if(password.value.trim() === ""){
+                passworderror1.textCotent = "Nama Tidak Boleh Kosong";
+            }else if (passwordinput.value.length < 6) {
+            passworderror.textContent = "Password harus 6 huruf atau lebih";
+            }
+
+        })
+    </script>
+</body>
+</html>
